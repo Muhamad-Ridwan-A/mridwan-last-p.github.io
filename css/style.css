@@ -1,0 +1,254 @@
+*{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+body{
+    background-color: lightblue !important;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/* sidebar */
+.vertical-nav{
+    min-width: 15rem;
+    width: 15rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+}
+.page-content{
+    width: calc(100% - 15rem);
+    margin-left: 15rem;
+    transition: all 0.4s;
+}
+#sidebar.active {
+    margin-left: -15rem;
+}
+#content.active {
+    width: 100%;
+    margin: 0;
+}
+.vertical-nav .nav .nav-item{
+    background-color: aliceblue;
+}
+.vertical-nav .nav .nav-item a{
+    color: #000;
+    font-size: 1.1rem;
+    padding: 4px;
+    padding-left: 12px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.vertical-nav .nav .nav-item .nav-link i{
+    margin-right: 5px;
+}
+.vertical-nav .nav .nav-item .lesson{
+    display: none;
+}
+.vertical-nav .nav .nav-item .lesson li{
+    margin-bottom: 3px;
+}
+.vertical-nav .nav .nav-item .lesson li .list-group .list{
+    margin-left: -24px;
+    margin-top: 5px;
+}
+.vertical-nav .nav .nav-item .list-group{
+    display: none;
+    text-align: center;
+}
+.vertical-nav .nav .nav-item .list-group .list a{
+    border: 1px solid grey;
+}
+/* hover */
+.vertical-nav .nav .nav-item:hover > .lesson{
+    display: grid;
+}
+.vertical-nav .nav .nav-item a:hover{
+    background: blue;
+    transition: all 0.5s;
+}
+.vertical-nav .nav .nav-item:hover > .list-group{
+    display: flex;
+}
+.vertical-nav .nav .nav-item .lesson li:hover > .list-group{
+    display: flex;
+}
+/* hover end*/
+
+/* sidebar end */
+/* hero */
+.page-content .hero{
+    background: black ;
+}
+.page-content .hero .jumbotron h1{
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.page-content .hero .jumbotron .container{
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+.page-content .hero .jumbotron .container .row .col-md-5 {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.page-content .hero .jumbotron .container .row:nth-child(1) .gbr{
+    padding: 40px;
+    display: flex;
+}
+.page-content .hero .jumbotron .container .row .col-md-5 img{
+    width: 70%;
+    /* min-width: 50%; */
+    height: 70%;
+    /* min-height: 50%; */
+    margin: auto;
+}
+/* hero end */
+
+/* lesson */
+.page-content .lesson .jumbotron .container h1{
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    background-color: #007AFF;
+    padding: 10px;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.page-content .lesson .jumbotron .container .listlesson .row .col-lg-4{
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+.page-content .lesson .jumbotron .container .listlesson .row .col-lg-4 .card{
+    margin: auto;
+    max-height: 15rem;
+    width: 100%;
+    height: 100%;
+}
+.page-content .lesson .jumbotron .container .listlesson .row .col-lg-4 .card .card-header p{
+    color: #000;
+    font-size: 1.5rem;
+}
+.page-content .lesson .jumbotron .container .listlesson .row .col-lg-4 .card .card-body img {
+    width: 100%;
+    height: 100%;
+}
+/* lesson end */
+
+/* GRADE */
+.page-content .grade .jumbotron .container h1{
+    margin-bottom: 30px;
+    background-color: #007AFF;
+    padding: 10px;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.page-content .grade .jumbotron .container .row{
+    margin: 25px 0px 25px 0px;
+}
+.page-content .grade .jumbotron .container .row .col-md-3{
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    background-color:green;
+    padding: 10px;
+}
+.page-content .grade .jumbotron .container .row .col-md-3 a h3{
+    color: #000;
+    font-size: 1.5rem;
+}
+.page-content .grade .jumbotron .container .row .col-lg-2 .card{
+    margin: auto;
+    max-height: 15rem;
+    border-radius: 7px;
+    display: none;
+}
+/* GRADE end */
+
+/* footer */
+footer .foot .d-flex span{
+    color: #ddd;
+    margin: auto;
+}
+
+/* footer end */
+
+/* dekstop v */
+@media (min-width: 992px) {
+    /* hero */
+    .page-content .hero .jumbotron h1{
+        margin-top: -40px;
+    }
+    .page-content .hero .jumbotron .container .row .col-md-5 {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0px;
+    }
+    .page-content .hero .jumbotron .container .row .col-md-5 img{
+        width: 80%;
+        height: 80%;
+    }
+    /* hero end */
+    /* lesson */
+    .page-content .lesson .jumbotron .container .listlesson .row .col-lg-4{
+    padding-top: 0px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+    /* lesson end */
+    /* grade */
+    .page-content .grade .jumbotron .container .row .col-md-3{
+        background-color: transparent;
+    }
+    .page-content .grade .jumbotron .container .row .col-lg-2 .card{
+        display: grid;
+    }
+    /* grade end*/
+ }
+/* dekstop v end*/
+@media (min-width:770px) {
+    .page-content .hero .jumbotron .container .row:nth-child(1) .gbr{
+        padding: 0px;
+        height: 150px;
+        width: 150px;
+    }
+}
+
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -15rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 8rem;
+      width: calc(100% - 6rem);
+    }
+    .vertical-nav{
+        min-width: 10rem;
+        width: 10rem;
+    }
+    .page-content .hero .jumbotron h1,
+    .page-content .lesson .jumbotron .container h1,
+    .page-content .grade .jumbotron .container h1{
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    .page-content .hero .jumbotron .container .row .col-md-5 img{
+        width: 50%;
+        height: 50%;
+    }
+  }

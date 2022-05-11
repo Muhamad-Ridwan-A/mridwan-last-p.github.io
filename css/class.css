@@ -1,0 +1,370 @@
+*{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+body{
+    background-color: lightblue !important;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/* sidebar */
+.vertical-nav{
+    min-width: 15rem;
+    width: 15rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+}
+.page-content{
+    width: calc(100% - 15rem);
+    margin-left: 15rem;
+    transition: all 0.4s;
+}
+#sidebar.active {
+    margin-left: -15rem;
+}
+#content.active {
+    width: 100%;
+    margin: 0;
+}
+.vertical-nav .nav .nav-item{
+    background-color: aliceblue;
+}
+.vertical-nav .nav .nav-item a{
+    color: #000;
+    font-size: 1.1rem;
+    padding: 4px;
+    padding-left: 12px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.vertical-nav .nav .nav-item .nav-link i{
+    margin-right: 5px;
+}
+.vertical-nav .nav .nav-item .lesson{
+    display: none;
+}
+.vertical-nav .nav .nav-item .lesson li{
+    margin-bottom: 3px;
+}
+.vertical-nav .nav .nav-item .lesson li .list-group .list{
+    margin-left: -24px;
+    margin-top: 5px;
+}
+.vertical-nav .nav .nav-item .list-group{
+    display: none;
+    text-align: center;
+}
+.vertical-nav .nav .nav-item .list-group .list a{
+    border: 1px solid grey;
+}
+/* hover */
+.vertical-nav .nav .nav-item:hover > .lesson{
+    display: grid;
+}
+.vertical-nav .nav .nav-item a:hover{
+    background: blue;
+    transition: all 0.5s;
+}
+.vertical-nav .nav .nav-item:hover > .list-group{
+    display: flex;
+}
+.vertical-nav .nav .nav-item .lesson li:hover > .list-group{
+    display: flex;
+}
+/* hover end*/
+/* sidebar end */
+/* nav */
+.page-content .nav .jumbotron-fluid{
+    border-radius: 10px;
+    border-bottom: 5px solid rgba(67, 36, 243, 0.5);
+    border-left: 3px solid rgba(67, 36, 243, 0.5);
+}
+.page-content .nav .jumbotron-fluid button{
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(200, 240, 200, 0.4) !important;
+}
+.page-content .nav .jumbotron-fluid button:hover{
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.page-content .nav .jumbotron-fluid h2{
+    font-size: 1.5rem;
+}
+.page-content .nav .jumbotron-fluid img{
+    max-width: 45px;
+    max-height: 45px;
+    display: none;
+}
+/* nav end */
+/* recent on */
+.page-content .recently .jumbotron{
+    border-radius: 6px;
+    border-radius: 10px;
+    border-bottom: 5px solid rgba(67, 36, 243, 0.5);
+    border-left: 2px solid rgba(67, 36, 243, 0.5);
+    border-right: 2px solid rgba(67, 36, 243, 0.5);
+    border-top: 1px solid rgba(67, 36, 243, 0.5);
+}
+.page-content .recently .jumbotron .list-recenton h2{
+    font-size: 1.5rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: #bdc3c7;
+}
+.page-content .recently .jumbotron .list-recenton .table thead tr th{
+    font-size: 10px;
+}
+.page-content .recently .jumbotron .list-recenton .table tbody tr td .user h6{
+    font-size: 12px;
+}
+.page-content .recently .jumbotron .list-recenton .table tbody tr td .user img{
+    width: 22px;
+    height: 20px;
+}
+.page-content .recently .jumbotron .list-recenton .table tbody tr td p{
+    font-size: 10px;
+}
+.page-content .recently .jumbotron .list-recenton .table tbody tr td p.rounded-pill.aktip{
+    border: 1px solid rgb(11, 240, 11, 0.4);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background: rgba(88, 226, 88, 0.2);
+}
+.page-content .recently .jumbotron .list-recenton .table tbody tr td p.rounded-pill.off{
+    border: 1px solid rgba(252, 29, 29, 0.4);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    background: rgba(226, 88, 88, 0.2);
+}
+/* recent on end */
+/* footer */
+footer .foot .d-flex span{
+    color: #ddd;
+    margin: auto;
+}
+/* footer end */
+/* lesson */
+.page-content .lesson .jumbotron .container h1{
+    font-size: 1.6rem;
+    background: rgba(10, 7, 163, 0.5);
+    border-radius: 5px 5px 2px 2px;
+    padding-top: 4px;
+    color: white;
+    padding-bottom: 4px;
+    box-shadow: 0px 3px 2px 0px rgba(25, 126, 241, 0.4);
+    border-bottom: 2px solid rgba(25, 126, 241, 0.4);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+.page-content .lesson .jumbotron .container .matematika{
+    border: 1px solid grey;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.page-content .lesson .jumbotron .container .matematika h3{
+    font-size: 1.1rem;
+    color: white;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+/* task */
+.page-content .lesson .jumbotron .container .matematika .Task{
+    margin-top: 30px;
+}
+.page-content .lesson .jumbotron .container .matematika .Task h5{
+    font-size: 13px;
+}
+.page-content .lesson .jumbotron .container .matematika .Task table thead tr th{
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+.page-content .lesson .jumbotron .container .matematika .Task table tbody tr td .name-work h5{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.page-content .lesson .jumbotron .container .matematika .Task table tbody tr td .name-work p{
+    font-size: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.page-content .lesson .jumbotron .container .matematika .Task table tbody tr td p{
+    font-size: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.page-content .lesson .jumbotron .container .matematika .Task table tbody tr td button{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+.page-content .lesson .jumbotron .container .matematika .Task table tbody tr td button p{
+    font-size: 10px;
+    height: 0px !important;
+    padding: 1px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.page-content .lesson .jumbotron .container .matematika .Task table tbody tr td .EX-Time small{
+    font-size: 7px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.page-content .lesson .jumbotron .container .matematika .Task table tbody tr td .EX-Time p{
+    font-size: 7px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+/* task end */
+/* evaluation */
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 h5{
+    font-size: 12px;
+}
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .evaluation{
+    background: rgba(128, 128, 128, 0.7);
+}
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .evaluation .row .col-6 h4, h5{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .evaluation .row .col-6 .jumlah{
+    margin-top: 7px;
+}
+/* evaluation end */
+/* recen sub */
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .list-recently table thead tr th{
+    font-size: 13px;
+}
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .list-recently table tbody tr td .user img{
+    width: 20px;
+    height: 20px;
+}
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .list-recently table tbody tr td .user h6{
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .list-recently table tbody tr td p{
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+/* recen sub end */
+/* lesson end */
+/* dekstop v */
+@media (min-width: 992px) {
+    /* nav */
+    .page-content .nav .jumbotron-fluid h2{
+        font-size: 2rem;
+    }
+    .page-content .nav .jumbotron-fluid img{
+        display: block;
+    }
+    /* nav end */ 
+    /* list recent on */
+    .page-content .recently .jumbotron .list-recenton h2{
+        font-size: 1.9rem;
+    }
+    .page-content .recently .jumbotron .list-recenton .table thead tr th{
+        font-size: 15px;
+    }
+    .page-content .recently .jumbotron .list-recenton .table tbody tr td .user h6{
+        font-size: 14px;
+    }
+    .page-content .recently .jumbotron .list-recenton .table tbody tr td .user img{
+        width: 30px;
+        height: 25px;
+    }
+    .page-content .recently .jumbotron .list-recenton .table tbody tr td p{
+        font-size: 13px;
+    }
+    /* list recent on end */
+    /* lesson */
+    .page-content .lesson .jumbotron .container h1{
+        font-size: 2rem;
+    }
+    .page-content .lesson .jumbotron .container .matematika h3{
+        font-size: 1.6rem;
+    }
+    /* lesson end*/
+    /* task */
+    .page-content .lesson .jumbotron .container .matematika .Task h5{
+        font-size: 18px;
+    }
+    .page-content .lesson .jumbotron .container .matematika .Task table thead tr th{
+        font-size: 15px;
+    }
+    .page-content .lesson .jumbotron .container .matematika .Task table tbody tr td .name-work h5{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .page-content .lesson .jumbotron .container .matematika .Task table tbody tr td .name-work p{
+        font-size: 14px;
+    }
+    .page-content .lesson .jumbotron .container .matematika .Task table tbody tr td p{
+        font-size: 13px;
+    }
+    .page-content .lesson .jumbotron .container .matematika .Task table tbody tr td button p{
+        font-size: 13px;
+        padding: 5px;
+    }
+    .page-content .lesson .jumbotron .container .matematika .Task table tbody tr td .EX-Time small{
+        font-size: 12px;
+    }
+    .page-content .lesson .jumbotron .container .matematika .Task table tbody tr td .EX-Time p{
+        font-size: 13px;
+    }
+    /* task end */
+    /* evaluation */
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 h5{
+    font-size: 17px;
+}
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .evaluation .row .col-6 h4, h5{
+    font-size: 17px;
+}
+/* evaluation end */
+/* recen sub */
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .list-recently table thead tr th{
+    font-size: 16px;
+}
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .list-recently table tbody tr td .user img{
+    width: 30px;
+    height: 30px;
+}
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .list-recently table tbody tr td .user h6{
+    font-size: 16px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.page-content .lesson .jumbotron .container .matematika .evaluasi .row .col-lg-6 .list-recently table tbody tr td p{
+    font-size: 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+/* recen sub end */
+}
+/* dekstop v end*/
+@media (min-width:770px) { 
+}
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -15rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 7.4rem;
+      width: calc(100% - 4.8rem);
+    }
+    .vertical-nav{
+        min-width: 10rem;
+        width: 10rem;
+    }
+  }
